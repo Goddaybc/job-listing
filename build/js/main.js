@@ -31,7 +31,7 @@ function displayData(fetchData) {
     .map((eachData, index) => {
       return `
                   <div
-          class="flex flex-col md:flex-row lg:flex-row justify-between items-center my-10 md:my-3 lg:my-3 shadow-2xl p-3 rounded-[0.5rem] bg-white relative w-full ${
+          class="flex flex-col md:flex-row lg:flex-row justify-between items-center my-10 md:my-3 lg:my-3 shadow-2xl p-3 rounded-[0.5rem] bg-white relative md:gap-x-6 ${
             index === 0 || index === 1 ? "border-l-4 border-[#5ba4a4]" : ""
           } "
         >
@@ -39,18 +39,18 @@ function displayData(fetchData) {
     <!-- Left Section -->
         
 
-          <div class="flex flex-col md:flex-row lg:flex-row lg:items-center md:items-center  md:space-x-[2rem] lg:space-x-[2rem] w-full ">
+          <div class="flex flex-col md:flex-row lg:flex-row lg:items-center md:items-center   md:space-x-[1rem] lg:space-x-[2rem] w-full ">
             <img src="${
               eachData.logo
             }" alt="Logo" class="absolute left-5 -top-8 w-[4rem] md:w-[6rem] md:static " />
             <div class="md:ml-0 ml-3 mt-5">
-              <div class="flex items-center gap-x-4">
-                <p class="text-[#5ba4a4] font-bold text-xl md:text-2xl lg:2xl">${
+              <div class="flex items-center gap-x-4 md:gap-x-5 lg:gap-5">
+                <p class="text-[#5ba4a4] font-bold text-xl md:text-2xl lg:text-2xl">${
                   eachData.company
                 }</p>
                 ${
                   eachData.new
-                    ? `<p class="bg-[#5ba4a4] text-white text-[1rem] rounded-[1rem] p-1 py-1">NEW !</p>`
+                    ? `<p class="bg-[#5ba4a4] text-white text-[1rem]  rounded-[1rem] p-1 py-1">NEW!</p>`
                     : ""
                 }
                 ${
@@ -77,7 +77,7 @@ function displayData(fetchData) {
              <!-- Right Section -->
 
           <div
-            class="flex md:flex-row lg:flex-row items-center gap-x-4 text-[#5ba4a4] font-semibold text-xl flex-wrap md:flex-nowrap lg:flex-nowrap gap-y-3"
+            class="flex md:flex-row lg:flex-row items-center gap-x-4 text-[#5ba4a4] font-semibold text-xl flex-wrap md:flex-wrap lg:flex-nowrap gap-y-3"
           >
           <span class="text-[#5ba4a4] bg-[#eff8f5] p-2 rounded-lg filter-item cursor-pointer">${
             eachData.role
