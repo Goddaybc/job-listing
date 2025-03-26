@@ -153,6 +153,23 @@ function updateSelectedItems() {
     )
     .join("");
 
+  // Filter job card base on selected filter
+  const allCards = document.querySelectorAll("#wrapper > div");
+  allCards.forEach((card) => {
+    const cardFilters = Array.from(card.querySelectorAll(".filter-item")).map(
+      (item) => item.innerText.trim()
+    );
+    // Show card only if it includes all selected filters
+    const matches = selectedItems.every((filter) =>
+      cardFilters.includes(filter)
+    );
+    if (matches) {
+      card.style.display = "flex"; // Show matching card
+    } else {
+      card.style.display = "none"; // Hide non-matching card
+    }
+  });
+
   // Attach event listeners to each small X button
   selectedItemsDiv.addEventListener("click", (event) => {
     if (event.target.closest(".remove-item")) {
