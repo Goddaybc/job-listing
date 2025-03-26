@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#ECFAFA] font-spartan">
+    <main class="">
+      <div
+        id="selectedContainer"
+        style="display: none"
+        class="max-w-9/10 md:max-w-9/10 lg:max-w-9/10 mx-auto my-4 flex justify-between items-center space-x-4 p-7 bg-white shadow-lg rounded-md"
+      >
+        <div id="selectedItems" class="flex flex-wrap gap-3"></div>
+        <button
+          id="clearBtn"
+          class="text-[#5ba4a4] font-bold text-xl hover:underline flex flex-nowrap md:flex-wrap lg:flex-wrap"
+        >
+          <a href="#">Clear</a>
+        </button>
+      </div>
+      <div id="wrapper" class="max-w-9/10 md:max-w-9/10 lg:max-w-9/10 mx-auto">
+        <div
+          class="flex justify-between items-center my-4 shadow-2xl p-4 rounded-[0.5rem] bg-white"
+        >
+          <div id="container" class="flex items-center space-x-[2rem]">
+            <img src="./images/photosnap.svg" alt="Logo" />
+            <div>
+              <div class="flex items-center justify-between">
+                <p class="text-[#5ba4a4] font-bold">Photosnap</p>
+                <p class="bg-[#5ba4a4] text-white p-1 rounded-[1rem] text-xs">
+                  New!
+                </p>
+                <p class="text-white bg-black p-1 rounded-[1rem] text-xs">
+                  Featured
+                </p>
+              </div>
+              <h1 class="text-xl font-medium">Senior Frontend Developer</h1>
+              <div class="flex gap-3 text-[#878d8d]">
+                <p>1d ago</p>
+                <p>.</p>
+                <p>Full Time</p>
+                <p>.</p>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+          <hr class="w-3xl sm:hidden" />
+          <div
+            class="flex w-1/2 items-center justify-between text-[#5ba4a4] font-semibold text-xl"
+          >
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">Frontend</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">Senior</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">HTML</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">CSS</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">JAVASCRIPT</h1>
+          </div>
+        </div>
+        <!-- <div
+          id="wrapper"
+          class="flex justify-between items-center my-4 shadow-2xl p-4 rounded-[0.5rem] bg-white"
+        >
+          <div id="container" class="flex items-center space-x-[2rem]">
+            <img src="./images/photosnap.svg" alt="Logo" />
+            <div>
+              <div class="flex items-center justify-between">
+                <p class="text-[#5ba4a4] font-bold">Photosnap</p>
+                <p class="bg-[#5ba4a4] text-white p-1 rounded-[1rem] text-xs">
+                  New!
+                </p>
+                <p class="text-white bg-black p-1 rounded-[1rem] text-xs">
+                  Featured
+                </p>
+              </div>
+              <h1 class="text-xl font-medium">Senior Frontend Developer</h1>
+              <div class="flex gap-3 text-[#878d8d]">
+                <p>1d ago</p>
+                <p>.</p>
+                <p>Full Time</p>
+                <p>.</p>
+                <p>USA only</p>
+              </div>
+            </div>
+          </div>
+          <hr class="w-3xl sm:hidden" />
+          <div
+            class="flex w-1/2 items-center justify-between text-[#5ba4a4] font-semibold text-xl"
+          >
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">Frontend</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">Senior</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">HTML</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">CSS</h1>
+            <h1 class="bg-[#eff8f5] p-2 rounded-lg">JAVASCRIPT</h1>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
